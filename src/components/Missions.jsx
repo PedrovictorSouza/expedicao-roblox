@@ -1,5 +1,6 @@
 import './Missions.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const missions = [
   {
@@ -69,9 +70,12 @@ const borderColors = {
 
 function Missions() {
   const [hoveredMission, setHoveredMission] = useState(null)
+  const navigate = useNavigate()
 
   const handleMissionClick = (missionId) => {
-    console.log('Missão clicada:', missionId)
+    if (missionId === 'explorador') {
+      navigate('/module/explorador')
+    }
   }
 
   return (
@@ -96,6 +100,10 @@ function Missions() {
             <button 
               className="mission-button" 
               style={{ borderColor: borderColors[mission.id], color: borderColors[mission.id] }}
+              onClick={(e) => {
+                e.stopPropagation()
+                handleMissionClick(mission.id)
+              }}
             >
               {mission.buttonText}
             </button>

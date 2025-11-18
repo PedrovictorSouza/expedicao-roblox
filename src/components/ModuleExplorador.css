@@ -1,0 +1,203 @@
+.module-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #E3F2FD;
+  padding: 120px 2rem 4rem 2rem;
+}
+
+.back-button {
+  font-family: 'Barriecito', cursive;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid #4A90E2;
+  color: #4A90E2;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.back-button:hover {
+  background: #4A90E2;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.module-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.module-icon {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.module-title {
+  font-family: 'Barriecito', cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0D47A1;
+  margin: 0 0 2rem 0;
+}
+
+.module-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.module-theme,
+.module-duration,
+.module-objective {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.videos-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+}
+
+.video-card {
+  background: #ffffff;
+  border: 3px solid #4A90E2;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.video-number {
+  font-family: 'Barriecito', cursive;
+  font-size: 1.3rem;
+  color: #0D47A1;
+}
+
+.video-short-title {
+  font-family: 'Barriecito', cursive;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0D47A1;
+  flex: 1;
+}
+
+.video-duration {
+  font-size: 1rem;
+  color: #666;
+  background: #E3F2FD;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video-section strong {
+  font-size: 1.1rem;
+  color: #0D47A1;
+  font-family: 'Barriecito', cursive;
+}
+
+.video-section p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.challenge-section,
+.style-section {
+  background: #ffffff;
+  border: 3px solid #4A90E2;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.challenge-icon,
+.style-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-title,
+.style-title {
+  font-family: 'Barriecito', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0D47A1;
+  margin: 0 0 1.5rem 0;
+}
+
+.challenge-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.style-list {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.style-list p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.style-list strong {
+  color: #0D47A1;
+}
+
+@media (max-width: 768px) {
+  .module-title {
+    font-size: 2rem;
+  }
+
+  .video-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-short-title {
+    flex: none;
+  }
+
+  .module-container {
+    padding: 120px 1rem 4rem 1rem;
+  }
+}
+

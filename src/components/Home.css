@@ -66,6 +66,14 @@
   align-items: center;
 }
 
+.home-title .slogan {
+  font-family: 'Barriecito', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  margin: 2rem 0 0 0;
+}
+
 .home-title .powered-by {
   font-family: 'Barriecito', cursive;
   font-size: 1.5rem;

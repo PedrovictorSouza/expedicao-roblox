@@ -1,0 +1,98 @@
+.manifesto-content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+}
+
+.manifesto-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manifesto-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.manifesto-text {
+  width: 100%;
+  color: #000000;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+.manifesto-text p {
+  margin: 0 0 24px 0;
+  text-align: left;
+}
+
+.manifesto-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.manifesto-cta {
+  font-weight: 600;
+  margin-top: 32px !important;
+}
+
+.manifesto-button {
+  width: 100%;
+  max-width: 600px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.manifesto-button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.manifesto-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .manifesto-content {
+    padding: 60px 20px;
+  }
+  
+  .manifesto-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .manifesto-text {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .manifesto-button {
+    padding: 16px 32px;
+    font-size: 0.9rem;
+  }
+}
+

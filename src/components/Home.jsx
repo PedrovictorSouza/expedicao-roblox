@@ -1,5 +1,7 @@
 import './Home.css'
 import Cube from './Cube'
+import Manifesto from './Manifesto/Manifesto'
+import ManifestoSection from './ManifestoSection/ManifestoSection'
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import atlas from '../assets/atlas.png'
@@ -60,8 +62,9 @@ function Home() {
   }
 
   return (
-    <div className="home-container">
-      <div className="home-grid">
+    <>
+      <div className="home-container">
+        <div className="home-grid">
         <img src={atlas} alt="Atlas" className="atlas-image" />
         <h1 className="home-title">
           <div className="title-line">
@@ -94,6 +97,7 @@ function Home() {
               )
             })}
           </div>
+          <p className="slogan">Quer criar com a gente? Desce pro play.</p>
           <p className="powered-by">powered by mastertech</p>
           <button className="badges-button" onClick={handleBadgesClick}>
             badges
@@ -102,6 +106,9 @@ function Home() {
         <Cube />
       </div>
     </div>
+      <ManifestoSection />
+      <Manifesto />
+    </>
   )
 }
 

@@ -36,6 +36,12 @@ function Navbar() {
         >
           missões
         </Link>
+        <Link 
+          to="/ide" 
+          className={`navbar-link ${location.pathname === '/ide' ? 'active' : ''}`}
+        >
+          IDE
+        </Link>
       </div>
     </nav>
   )
